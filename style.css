@@ -121,9 +121,30 @@ main {
   font-size: 2rem;
 }
 
-.label {
-  text-align: left;
-  display: inline-block;
-  font-size: 1.5rem;
-  width: 10rem;
+
+@media screen and (max-width: 603px) {
+  .answer {
+    width: 11rem;
+  }
+  .answer-text {
+    font-size: 1.5rem;
+  }
+
+  .calculation {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .message {
+    font-size: 2.5rem;
+  }
+
+  .score {
+    font-size: 2rem;
+  }
+
+  .try {
+    font-size: 2rem;
+  }
 }
+

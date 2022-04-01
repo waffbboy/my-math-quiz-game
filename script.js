@@ -41,7 +41,7 @@ document.querySelector('.reset').addEventListener('click', function () {
   document.querySelector('.question').textContent = '?';
   document.querySelector('.answer').value = '';
   document.querySelector('.score').textContent = 'score';
-  document.querySelector('.score').textContent = '💯score';
+   document.querySelector('.score').textContent = '💯:score';
   document.querySelector('body').style.backgroundColor =
     'rgba(163, 214, 44, 0.774)';
 });

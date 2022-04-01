@@ -17,27 +17,27 @@ document.querySelector('.submit').addEventListener('click', function () {
 
   //document.querySelector('.question').textContent = mathGame(userInput);
   if (!userInput) {
-    //document.querySelector('.message').textContent = 'No Input⛔';
-    displayMessage('No Input⛔');
+    document.querySelector('.message').textContent = 'No Input⛔';
+    //displayMessage('No Input⛔');
   } else if (userInput === cal) {
-    //document.querySelector('.message').textContent = 'CORRECT🤩';
-    displayMessage('CORRECT🤩');
+    document.querySelector('.message').textContent = 'CORRECT🤩';
+    //displayMessage('CORRECT🤩');
     document.querySelector('.question').textContent = cal;
     document.querySelector('.score').textContent = '100%';
     document.querySelector('body').style.backgroundColor = 'rgb(141, 140, 140)';
   } else if (userInput !== cal) {
-    //document.querySelector('.message').textContent = 'WRONG🛑🛑';
-    displayMessage('WRONG🛑🛑');
+    document.querySelector('.message').textContent = 'WRONG🛑🛑';
+    //displayMessage('WRONG🛑🛑');
     document.querySelector('.score').textContent = '0💔';
   } else {
-    //document.querySelector('.message').textContent = 'incorrect input🚫';
-    displayMessage('incorrect input🚫');
+    document.querySelector('.message').textContent = 'incorrect input🚫';
+   // displayMessage('incorrect input🚫');
   }
 });
 
 document.querySelector('.reset').addEventListener('click', function () {
-  //document.querySelector('.message').textContent = 'start💡';
-  displayMessage('start💡');
+  document.querySelector('.message').textContent = 'start💡';
+  //displayMessage('start💡');
   document.querySelector('.question').textContent = '?';
   document.querySelector('.answer').value = '';
   document.querySelector('.score').textContent = 'score';
